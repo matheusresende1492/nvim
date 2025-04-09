@@ -20,6 +20,21 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup lazy.nvim
 require("lazy").setup({
 
+	-- Color scheme
+	{ "catppuccin/nvim", as = "catppuccin" },
+
+	{
+		"folke/tokyonight.nvim",
+		as = "tokyonight",
+		lazy = false,
+		priority = 1000,
+		opts = {}
+	},
+
+	{ 'echasnovski/mini.nvim', version = '*' },
+
+	{ "nvim-tree/nvim-web-devicons", opts = {} },
+
 	{
 		"folke/snacks.nvim",
 		priority = 1000,
@@ -74,6 +89,7 @@ require("lazy").setup({
 				notification = {
 					-- wo = { wrap = true } -- Wrap notifications
 				}
+				
 			}
 		},
 		keys = {
@@ -139,7 +155,7 @@ require("lazy").setup({
 			{ "<leader>Z",       function() Snacks.zen.zoom() end,                     desc = "Toggle Zoom" },
 			{ "<leader>.",       function() Snacks.scratch() end,                      desc = "Toggle Scratch Buffer" },
 			{ "<leader>S",       function() Snacks.scratch.select() end,               desc = "Select Scratch Buffer" },
-			{ "<leader>n",       function() Snacks.notifier.show_history() end,        desc = "Notification History" },
+			--{ "<leader>n",       function() Snacks.notifier.show_history() end,        desc = "Notification History" },
 			{ "<leader>bd",      function() Snacks.bufdelete() end,                    desc = "Delete Buffer" },
 			{ "<leader>cR",      function() Snacks.rename.rename_file() end,           desc = "Rename File" },
 			{ "<leader>gB",      function() Snacks.gitbrowse() end,                    desc = "Git Browse",               mode = { "n", "v" } },
@@ -182,17 +198,6 @@ require("lazy").setup({
 		end,
 	},
 
-	-- Color scheme
-	{ "catppuccin/nvim", as = "catppuccin" },
-
-	{
-		"folke/tokyonight.nvim",
-		as = "tokyonight",
-		lazy = false,
-		priority = 1000,
-		opts = {}
-	},
-
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
@@ -211,6 +216,23 @@ require("lazy").setup({
 			},
 		},
 	},
+
+	-- lazy.nvim
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		opts = {
+		-- add any options here
+		},
+		dependencies = {
+		-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+		"MunifTanjim/nui.nvim",
+		-- OPTIONAL:
+		--   `nvim-notify` is only needed, if you want to use the notification view.
+		--   If not available, we use `mini` as the fallback
+		"rcarriga/nvim-notify",
+		}
+  	},
 
 	-- -- Fuzzy Finder (files, lsp, etc)
 	-- {

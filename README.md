@@ -2,11 +2,15 @@
 
 This repository contains a simple Neovim configuration using Lazy.nvim
 
+## Dependencies
+- NeoVim
+- LazyGit
+
 ## Features
 
 - **lazy.nvim**: A plugin manager for Neovim.
-- **telescope**: Fuzzy Finder (files, lsp, etc).
-- **nvim-three**: File tree.
+- **snacks.nvim**: Collection of small QoL plugins for NeoVim.
+- **noice.nvim**: Replaces the UI for messages, cmdline and popupmenu.
 - **bufferline**: Visualize buffers as tabs.
 - **nvim-comment**: Comment code.
 - **auto-session**: Save and load buffers (a session) automatically for each folder.
