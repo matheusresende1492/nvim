@@ -1,16 +1,9 @@
-# Neovim/Lazy Configuration
+**This repo is supposed to used as config by NvChad users!**
 
-This repository contains a simple Neovim configuration using Lazy.nvim
+- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
+- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
+- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
 
-## Features
+# Credits
 
-- **lazy.nvim**: A plugin manager for Neovim.
-- **telescope**: Fuzzy Finder (files, lsp, etc).
-- **nvim-three**: File tree.
-- **bufferline**: Visualize buffers as tabs.
-- **nvim-comment**: Comment code.
-- **auto-session**: Save and load buffers (a session) automatically for each folder.
-- **lsp-zero**: Starting point for neovim lsp configuration.
-- **mason**: Simplify the management of language servers and plugins respectively.
-- **nvim-cpm**: Autocompletion.
-- **LSP**: Language Server Protocol support.
+1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!

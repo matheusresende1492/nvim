@@ -1,7 +1,6 @@
-vim.opt.nu = true -- enable line numbers
-vim.opt.relativenumber = true -- relative line numbers
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
+require "nvchad.options"
 
-vim.diagnostic.config({ virtual_text = true })
+-- add yours here!
+
+-- local o = vim.o
+-- o.cursorlineopt ='both' -- to enable cursorline!
