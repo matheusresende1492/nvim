@@ -19,6 +19,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup({
+	library = { "nvim-dap-ui" },
 	require("plugins/lazy/themes"),
 	require("plugins/lazy/snacks"),
 	require("plugins/lazy/lsp"),
@@ -33,20 +34,7 @@ require("mason-nvim-dap").setup({
   ensure_installed = { "codelldb" },
 })
 
-require("dapui").setup({
-	-- layouts = {
-	-- 	{
-	-- 	  elements = {
-	-- 		{ id = "scopes", size = 0.25 },
-    --     	{ id = "breakpoints", size = 0.25 },
-    --     	{ id = "stacks", size = 0.25 },
-    --     	{ id = "watches", size = 0.25 },
-	-- 	  },
-	-- 	  size = 50,
-	-- 	  position = "left",
-	-- 	},
-	--   },
-})
+require("dapui").setup({})
 
 require("lualine").setup()
 require("bufferline").setup()
