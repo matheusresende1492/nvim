@@ -25,6 +25,9 @@ vim.keymap.set('n', '<Leader>bpc', function()
   require('dap').clear_breakpoints()
 end, { desc = "DAP Clear Breakpoints" })
 
+
+vim.keymap.set('n', '<Leader>tt', function() vim.cmd("TransparentToggle") end)
+
 -- theme selection drop down
 vim.keymap.set('n', '<Leader>ct', function()
   local commands = {
@@ -43,6 +46,6 @@ vim.keymap.set('n', '<Leader>ct', function()
       choice.cmd()
     end
   end)
-end, { desc = "Command Picker (builtin)" })
+end, { desc = "Change color theme (personal)" })
 
 
