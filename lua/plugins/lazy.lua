@@ -20,18 +20,17 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup lazy.nvim
 require("lazy").setup({
 	library = { "nvim-dap-ui" },
-	require("plugins/lazy/themes"),
-	require("plugins/lazy/snacks"),
-	require("plugins/lazy/lsp"),
-	require("plugins/lazy/style"),
-	require("plugins/lazy/qol"),
-	require("plugins/lazy/dap"),
+	require("plugins.lazy.themes"),
+	require("plugins.lazy.snacks"),
+	require("plugins.lazy.lsp"),
+	require("plugins.lazy.style"),
+	require("plugins.lazy.qol"),
+	require("plugins.lazy.dap"),
 })
 
--- Inside your config
 require("mason").setup()
 require("mason-nvim-dap").setup({
-  ensure_installed = { "codelldb" },
+  ensure_installed = { "codelldb", "delve", },
 })
 
 require("dapui").setup({})

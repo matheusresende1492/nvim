@@ -1,20 +1,13 @@
 # Neovim/Lazy Configuration
 
-This repository contains a simple Neovim configuration using Lazy.nvim
+This repository contains my personal Neovim configuration, it contains a variety of plugins loaded by lazy.nvim
 
 ## Dependencies
 - NeoVim
-- LazyGit
 
 ## Features
 
-- **lazy.nvim**: A plugin manager for Neovim.
-- **snacks.nvim**: Collection of small QoL plugins for NeoVim.
-- **noice.nvim**: Replaces the UI for messages, cmdline and popupmenu.
-- **bufferline**: Visualize buffers as tabs.
-- **nvim-comment**: Comment code.
-- **auto-session**: Save and load buffers (a session) automatically for each folder.
-- **lsp-zero**: Starting point for neovim lsp configuration.
-- **mason**: Simplify the management of language servers and plugins respectively.
-- **nvim-cpm**: Autocompletion.
-- **LSP**: Language Server Protocol support.
+- Many style/theme customizations
+- LSP, DAP and auto-completion support out of the box for C/C++ and Go
+- A variety of QoL plugins (auto-session, file-tree, buffer-tabs and many more)
+- Mason for additional LSPs

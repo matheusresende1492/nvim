@@ -4,7 +4,7 @@ return {
 	{
 		"mfussenegger/nvim-dap",
 		config = function()
-		  require("plugins/lazy/config/dap-config")  -- this loads your custom config
+		  require("plugins.lazy.config.dap.config")  -- this loads your custom config
 		end,
 	},
     -- Fancy UI for DAP (optional but highly recommended)
